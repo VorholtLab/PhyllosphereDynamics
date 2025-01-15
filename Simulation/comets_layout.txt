@@ -1,0 +1,410 @@
+	parameters
+	activateRate = 0.001
+	allowCellOverlap = true
+	deathRate = 0.1
+	maxCycles = 10000
+	maxSpaceBiomass = 1000
+	minSpaceBiomass = 3e-13
+	pauseOnStep = false
+	randomOrder = true
+	spaceWidth = 0.01
+	simulateActivation = false
+	timeStep = 0.05
+	toroidalWorld = false
+	randomSeed = 0
+	allowFluxWithoutGrowth = true
+	colorRelative = true
+	displayLayer = 0
+	pixelScale = 5
+	showCycleTime = true
+	showCycleCount = true
+	saveslideshow = false
+	slideshowColorRelative = true
+	slideshowExt = png
+	slideshowLayer = 20
+	slideshowName = images/image
+	slideshowRate = 200
+	biomassMotionStyle = Diffusion (Crank-Nicolson)
+	exchangeStyle = Monod Style
+	flowDiffRate = 3e-13
+	growthDiffRate = 0
+	numDiffPerStep = 10
+	numRunThreads = 1
+	defaultAlpha = 1
+	defaultHill = 1
+	defaultKm = 20
+	defaultVmax = 1000
+	defaultW = 10
+	numExRxnSubsteps = 10
+	batchDilution = false
+	dilFactor = 0.01
+	dilTime = 24
+	cellSize = 1e-09
+	evolution = false
+	mutRate = 1e-09
+	addRate = 1e-05
+	costlyGenome = false
+	geneFractionalCost = 5e-08
+	writeFluxLog = true
+	fluxLogName = fluxLog.m
+	fluxLogRate = 50
+	fluxLogFormat = MATLAB
+	writeMediaLog = true
+	mediaLogName = mediaLog
+	mediaLogRate = 1
+	mediaLogFormat = MATLAB
+	writeBiomassLog = true
+	biomassLogName = biomassLog
+	biomassLogRate = 1
+	biomassLogFormat = MATLAB
+	writeTotalBiomassLog = false
+	totalBiomassLogRate = 1
+	totalBiomassLogName = ./total_biomass.m
+	useLogNameTimeStamp = false
+	writeMatFile = false
+	MatFileName = ./comets_log.mat
+//
+model_file Leaf257.txt Leaf68.txt
+	model_world
+		grid_size 1 1
+		world_media
+		23camp[e] 0
+		23ccmp[e] 0
+		23cgmp[e] 0
+		23cump[e] 0
+		25dkglcn[e] 0
+		2m35mdntha[e] 0
+		35dnta[e] 0
+		3amp[e] 0
+		3cmp[e] 0
+		3h4atb[e] 0
+		3mb[e] 0
+		3ump[e] 0
+		4abut[e] 0
+		4ahmmp[e] 0
+		4hba[e] 0
+		4hbz[e] 0
+		4hpro_LT[e] 0
+		4oxptn[e] 0
+		5dglcn[e] 0
+		5drib[e] 0
+		5mcsn[e] 0
+		6atha[e] 0
+		LalaLglu[e] 0
+		Larab[e] 0
+		Lcyst[e] 0
+		R_3hpba[e] 0
+		R_3hpdeca[e] 0
+		R_3hphpa[e] 0
+		R_3hpnona[e] 0
+		R_3hpocta[e] 0
+		R_3hpt[e] 0
+		aacald[c] 0
+		ac[e] 0
+		acac[e] 0
+		acgam[e] 0
+		acnam[e] 0
+		acon_C[e] 0
+		actn__R[e] 0
+		adn[e] 0
+		ag[e] 0
+		agm[e] 0
+		akg[e] 0
+		ala_L_asp__L[e] 0
+		ala_L_glu__L[e] 0
+		ala_L_thr__L[e] 0
+		ala__L[e] 0
+		ala_gln[e] 0
+		ala_his[e] 0
+		ala_leu[e] 0
+		alagly[e] 0
+		alahis[e] 0
+		alaleu[e] 0
+		alathr[e] 0
+		alatrp[e] 0
+		algac__M[e] 0
+		amob[c] 0
+		apc[e] 0
+		arab__L[e] 0
+		arbt6p[e] 0
+		arbt[e] 0
+		arg__L[e] 0
+		asn__L[e] 0
+		aso3[e] 0
+		aso4[e] 0
+		asp__D[e] 0
+		asp__L[e] 0
+		btn[e] 0
+		but[e] 0
+		buts[e] 0
+		butso3[e] 0
+		bz[e] 0
+		ca2[e] 1000
+		carn[e] 0
+		cd2[e] 0
+		cellb[e] 0
+		cgly[e] 0
+		ch4s[e] 0
+		chol[e] 0
+		chols[e] 0
+		cinnm[e] 0
+		cit[e] 0
+		cl[e] 1000
+		cm[e] 0
+		cmcbtt[e] 0
+		co2[e] 0
+		co[e] 0
+		cobalt2[e] 1000
+		crn[e] 0
+		cu2[e] 1000
+		cys__L[e] 0
+		cytd[e] 0
+		d23hb[e] 0
+		dad_2[e] 0
+		dca[e] 0
+		dcyt[e] 0
+		ddca[e] 0
+		dextrin[e] 0
+		dmgly[e] 0
+		dmso2[e] 0
+		doxrbcn[e] 0
+		drib[e] 0
+		dtbt[e] 0
+		duri[e] 0
+		dxyl[e] 0
+		enter[e] 0
+		etha[e] 0
+		eths[e] 0
+		ethso3[e] 0
+		etoh[e] 0
+		fald[e] 0
+		fe2[e] 1000
+		fe3[e] 1000
+		fe3dcit[e] 0
+		fe3pyovd_kt[e] 0
+		fol[e] 0
+		for[e] 0
+		fru[e] 0
+		fuc__L[e] 0
+		fum[e] 0
+		fusa[e] 0
+		g3pc[e] 0
+		gal[e] 0
+		gal_bD[e] 0
+		galctn__D[e] 0
+		galman4[e] 0
+		galman6[e] 0
+		galur[e] 0
+		gam[e] 0
+		glc__D[e] 0
+		glc__aD[e] 0
+		glcman4[e] 0
+		glcman6[e] 0
+		glcn[e] 0
+		glcur[e] 0
+		gln__L[e] 0
+		glu__L[e] 0
+		glucan4[e] 0
+		glucan6[e] 0
+		glutar[e] 0
+		gly[e] 0
+		gly_asn__L[e] 0
+		gly_asp__L[e] 0
+		gly_cys[e] 0
+		gly_gln[e] 0
+		gly_glu__L[e] 0
+		gly_leu[e] 0
+		gly_met[e] 0
+		gly_phe[e] 0
+		gly_pro__L[e] 0
+		gly_tyr[e] 0
+		glyb[e] 0
+		glyc2p[e] 0
+		glyc3p[e] 0
+		glyc[e] 0
+		glyclt[e] 0
+		glygln[e] 0
+		glyglu[e] 0
+		glygly[e] 0
+		glyglygln[e] 0
+		glymet[e] 0
+		glyphe[e] 0
+		glyser[e] 0
+		gthox[e] 0
+		gthrd[e] 0
+		gua[e] 0
+		h2[e] 0
+		h2co3[e] 0
+		h2o2[e] 0
+		h2o[e] 1000
+		h[e] 1000
+		hdca[e] 0
+		hdcea[e] 0
+		hemeO[c] 0
+		hexs[e] 0
+		his__L[e] 0
+		hisgly[e] 0
+		hishis[e] 0
+		hom__L[e] 0
+		hpta[e] 0
+		hxa[e] 0
+		hxan[e] 0
+		ibt[e] 0
+		icit[e] 0
+		id3acald[e] 0
+		ile__L[e] 0
+		ind3ac[e] 0
+		indole[e] 0
+		inost[e] 0
+		ins[e] 0
+		isetac[e] 0
+		istnt[e] 0
+		k[e] 1000
+		lac__D[e] 0
+		lac__L[e] 0
+		lcts[e] 0
+		leu__L[e] 0
+		leuleu[e] 0
+		lmn2[e] 0
+		lnlc[e] 0
+		lys__D[e] 0
+		lys__L[e] 0
+		lysglugly[e] 0
+		m_xyl[e] 0
+		mal__D[e] 0
+		mal__L[e] 0
+		malt[e] 0
+		malthp[e] 0
+		malthx[e] 0
+		malttr[e] 0
+		man[e] 0
+		manttr[e] 0
+		melib[e] 0
+		meoh[e] 0
+		met_L_ala__L[e] 0
+		met__D[e] 0
+		met__L[e] 0
+		metsox_R__L[e] 0
+		metsox_S__L[e] 0
+		mg2[e] 1000
+		mn2[e] 1000
+		mnl1p[e] 0
+		mnl[e] 0
+		mobd[c] 0
+		mobd[e] 1000
+		mso3[e] 0
+		na1[e] 1000
+		nac[e] 0
+		nh4[e] 1000
+		ni2[e] 1000
+		nmn[e] 0
+		no2[e] 0
+		no3[e] 0
+		nona[e] 0
+		novbcn[e] 0
+		o2[e] 1000
+		ocdca[e] 0
+		ocdcea[e] 0
+		octa[e] 0
+		orn[e] 0
+		orot[e] 0
+		oxa[e] 0
+		p_xyl[e] 0
+		pac[e] 0
+		pacald[e] 0
+		pea[e] 0
+		peamn[e] 0
+		pentso3[e] 0
+		phe__L[e] 0
+		phedca[e] 0
+		phehpa[e] 0
+		phehxa[e] 0
+		pheme[e] 0
+		phenona[e] 0
+		pheocta[e] 0
+		phept[e] 0
+		pi[e] 1000
+		pnto__R[e] 0
+		ppa[e] 0
+		ppap[e] 0
+		ppi[e] 0
+		ppoh[e] 0
+		pro__L[e] 0
+		progly[e] 0
+		prohisglu[e] 0
+		pta[e] 0
+		ptrc[e] 0
+		ptsla[e] 0
+		pydxn[e] 0
+		pyovd_kt[e] 0
+		pyr[e] 0
+		quin[e] 0
+		raffin[e] 0
+		rbt[e] 0
+		rib__D[e] 0
+		ribflv[e] 0
+		rmn[e] 0
+		rnam[e] 0
+		salc[e] 0
+		salchs4[e] 0
+		salchs4fe[e] 0
+		sbt__D[e] 0
+		sel[e] 0
+		ser__L[e] 0
+		serglugly[e] 0
+		sheme[c] 0
+		sheme[e] 0
+		skm[e] 0
+		slnt[e] 0
+		so3[e] 0
+		so4[e] 1000
+		spmd[e] 0
+		succ[e] 0
+		sucr[e] 0
+		sula[e] 0
+		sulfac[e] 0
+		tartr__D[e] 0
+		tartr__L[e] 0
+		taur[e] 0
+		thm[e] 0
+		thr__L[e] 0
+		thym[e] 0
+		thymd[e] 0
+		tnt[e] 0
+		tol[e] 0
+		tre[e] 0
+		trp__L[e] 0
+		tsul[e] 0
+		ttdca[e] 0
+		ttdcea[e] 0
+		ttrcyc[e] 0
+		tyr__L[e] 0
+		urea[e] 0
+		uri[e] 0
+		vacc[e] 0
+		val__D[e] 0
+		val__L[e] 0
+		xyl3[e] 0
+		xyl__D[e] 0
+		xylan4[e] 1e-08
+		xylan8[e] 0
+		xylb[e] 0
+		zn2[e] 1000
+	//
+	diffusion_constants 1.000000e-06
+	//
+	media
+	//
+	media_refresh 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5.000000e-09 0 0 0 
+	//
+	static_media 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 1 1000 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 1 1000 0 0 0 0 0 0 1 1000 0 0 1 1000 0 0 1 1000 1 1000 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1000
+	//
+	barrier
+	//
+	//
+//
+initial_pop
+	0 0 1.875000e-10 1.875000e-10
+//
