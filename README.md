@@ -3,7 +3,7 @@
 
 ========================
 
-This repository contains the genome-scale metabolic models reported in Pacheco, Ugolini *et al.*, as well as the scripts required to simulate dynamics stemming from metabolic exchange using [COMETS v2.11.3](https://www.runcomets.org/home).
+This repository contains the genome-scale metabolic models reported in Pacheco, Ugolini *et al.*, script for processing simulation logs, and the files for simulating dynamics stemming from metabolic exchange using [COMETS v2.11.3](https://www.runcomets.org/home).
 
 ## Models
 
@@ -11,11 +11,12 @@ Located in the 'Models' directory, contains genome-scale models for *Sphingomona
 
 ## Simulation scripts and output
 
-Located in the 'Simulation' directory, contains files for simulating dynamics in COMETS between the two models in a minimal medium containing xylan. Time-resolved biomass abundances and fluxes for each model are contained in the 'biomassLog,' and 'fluxLog.m' files, respectively.
+Located in the 'Simulation' directory, contains output files for a representative COMETS simulation between the two models in a minimal medium containing xylan. Time-resolved biomass abundances, media abundances, and fluxes for each model are contained in the 'biomassLog,' 'mediaLog,' and 'fluxLog.m' files, respectively.
 
-The script 'readCometsLogs' can be used to plot the relevant biomass, media, and flux logs. 
+The MATLAB script 'readCometsLogs' is used to plot the relevant biomass, media, and flux logs. 
 
 ## Required dependencies
   * [MATLAB](https://www.mathworks.com/products/matlab.html) R2021a or higher
   * [COBRA Toolbox](https://opencobra.github.io/cobratoolbox/stable/) v2.24.3 or higher
-  * [COMETS MATLAB toolbox](https://github.com/segrelab/comets-toolbox)
+  * [COMETS MATLAB Toolbox](https://github.com/segrelab/comets-toolbox)
+  * [COMETS](https://www.runcomets.org/home) is required to run the simulation within the 'Simulation' directory.
