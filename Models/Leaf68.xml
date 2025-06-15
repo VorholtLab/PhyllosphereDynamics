@@ -61466,8 +61466,14 @@
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_027673924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424872_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424873_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438537_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438540_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062444336_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062444338_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_186330269_1"/>
           </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
@@ -149408,6 +149414,12 @@
       <fbc:geneProduct metaid="G_WP_062437383_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437383_1" fbc:name="G_WP_062437383_1" fbc:label="G_WP_062437383_1"/>
       <fbc:geneProduct metaid="G_WP_062437384_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437384_1" fbc:name="G_WP_062437384_1" fbc:label="G_WP_062437384_1"/>
       <fbc:geneProduct metaid="G_WP_062427390_1" sboTerm="SBO:0000243" fbc:id="G_WP_062427390_1" fbc:name="G_WP_062427390_1" fbc:label="G_WP_062427390_1"/>
+      <fbc:geneProduct metaid="G_WP_027673924_1" sboTerm="SBO:0000243" fbc:id="G_WP_027673924_1" fbc:name="G_WP_027673924_1" fbc:label="G_WP_027673924_1"/>
+      <fbc:geneProduct metaid="G_WP_062424872_1" sboTerm="SBO:0000243" fbc:id="G_WP_062424872_1" fbc:name="G_WP_062424872_1" fbc:label="G_WP_062424872_1"/>
+      <fbc:geneProduct metaid="G_WP_062424873_1" sboTerm="SBO:0000243" fbc:id="G_WP_062424873_1" fbc:name="G_WP_062424873_1" fbc:label="G_WP_062424873_1"/>
+      <fbc:geneProduct metaid="G_WP_062438537_1" sboTerm="SBO:0000243" fbc:id="G_WP_062438537_1" fbc:name="G_WP_062438537_1" fbc:label="G_WP_062438537_1"/>
+      <fbc:geneProduct metaid="G_WP_062438540_1" sboTerm="SBO:0000243" fbc:id="G_WP_062438540_1" fbc:name="G_WP_062438540_1" fbc:label="G_WP_062438540_1"/>
+      <fbc:geneProduct metaid="G_WP_186330269_1" sboTerm="SBO:0000243" fbc:id="G_WP_186330269_1" fbc:name="G_WP_186330269_1" fbc:label="G_WP_186330269_1"/>
     </fbc:listOfGeneProducts>
     <groups:listOfGroups>
       <groups:group sboTerm="SBO:0000633" groups:id="group1" groups:name="&lt;undefined&gt;" groups:kind="partonomy">
