@@ -7,7 +7,7 @@ This repository contains the genome-scale metabolic models reported in Pacheco, 
 
 ## Models
 
-Located in the 'Models' directory, contains genome-scale models for *Sphingomonas* sp. Leaf257 and *Rhizobium* sp. Leaf68, two bacterial members of the *Arabidopsis thaliana* phyllosphere microbiome (*At*-LSPHERE, Bai *et al.*, 2015) originally constructed in Schäfer, Pacheco, *et al.*, 2023. The models are provided in .sbml format for use with [COBRApy](https://opencobra.github.io/cobrapy/).
+Located in the 'Models' directory, contains genome-scale models for *Sphingomonas* sp. Leaf257 and *Rhizobium* sp. Leaf68, two bacterial members of the *Arabidopsis thaliana* phyllosphere microbiome (*At*-LSPHERE, Bai *et al.*, 2015) originally constructed in Schäfer, Pacheco, *et al.*, 2023. The models are provided in .sbml format for use with [COBRApy](https://opencobra.github.io/cobrapy/) and in .mat format for use with [the COBRA Toolbox](https://opencobra.github.io/cobratoolbox/stable/index.html). The genome annotations used to generate the corresponding reconstructions in Schäfer, Pacheco, *et al.* are also included in the 'Models/Genomes' directory. 
 
 ## Simulation scripts and output
 
