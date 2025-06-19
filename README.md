@@ -11,12 +11,29 @@ Located in the 'Models' directory, contains genome-scale models for *Sphingomona
 
 ## Simulation scripts and output
 
-Located in the 'Simulation' directory, contains output files for a representative COMETS simulation between the two models in a minimal medium containing xylan. Time-resolved biomass abundances, media abundances, and fluxes for each model are contained in the 'biomassLog,' 'mediaLog,' and 'fluxLog.m' files, respectively.
+### Input
+
+Located in the 'Simulation' directory, contains files for a representative COMETS simulation between the two models in a minimal medium containing xylan. Following the installation and launching of [COMETS](https://www.runcomets.org/home), this directory is to be set as the location in which to carry out the simulation based on the models and layout files contained within. Please view the [COMETS documentation](https://segrelab.github.io/comets-manual/) for more information on installing and running COMETS.
+
+### Output
+
+The resulting time-resolved biomass abundances, media abundances, and fluxes for each model are contained in the 'biomassLog,' 'mediaLog,' and 'fluxLog.m' files, respectively.
 
 The MATLAB script 'readCometsLogs' is used to plot the relevant biomass, media, and flux logs. 
 
-## Required dependencies
+## System requirements
+
+### Hardware requirements
+
+The plotting script contained within this repository requires only a standard computer with enough RAM to support the in-memory operations. Please view the [COMETS documentation](https://segrelab.github.io/comets-manual/) for more information on hardware requirements for COMETS.
+
+### Required dependencies
   * [MATLAB](https://www.mathworks.com/products/matlab.html) R2021a or higher
   * [COBRA Toolbox](https://opencobra.github.io/cobratoolbox/stable/) v2.24.3 or higher
   * [COMETS MATLAB Toolbox](https://github.com/segrelab/comets-toolbox)
   * [COMETS](https://www.runcomets.org/home) is required to run the simulation within the 'Simulation' directory.
+
+### OS requirements
+
+This script has been tested on: macOS Sequoia (15.5)
+The expected runtime of the plotting script is ~2 minutes for a standard desktop computer.
