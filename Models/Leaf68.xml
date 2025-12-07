@@ -54918,14 +54918,11 @@
           <speciesReference species="M_succoa__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062444464_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062424961_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062444353_1"/>
-            <fbc:and>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_062424961_1"/>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_062444353_1"/>
-            </fbc:and>
-          </fbc:or>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_AKGDa" sboTerm="SBO:0000176" id="R_AKGDa" name="Oxoglutarate dehydrogenase (lipoamide)" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB4N1000">
@@ -72197,7 +72194,7 @@
           <speciesReference species="M_oaa__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_WP_082447272_1"/>
+          <fbc:geneProductRef fbc:geneProduct="G_WP_156356514_1"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_DMATT" sboTerm="SBO:0000176" id="R_DMATT" name="Dimethylallyltranstransferase" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -78509,7 +78506,10 @@
           <speciesReference species="M_pi__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_WP_062442680_1"/>
+          <fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424165_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062439777_1"/>
+          </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_FCLT" sboTerm="SBO:0000176" id="R_FCLT" name="Ferrochelatase" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -80536,6 +80536,14 @@
           <speciesReference species="M_2dmmq8__91__c__93__" stoichiometry="1" constant="true"/>
           <speciesReference species="M_succ__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424892_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424891_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424893_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062424894_1"/>
+          </fbc:and>
+        </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_FRUpts" sboTerm="SBO:0000185" id="R_FRUpts" name="D-fructose transport via PEP:Pyr PTS" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
         <annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
@@ -81947,7 +81955,10 @@
           <speciesReference species="M_pi__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_WP_062442294_1"/>
+          <fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062443092_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062442294_1"/>
+          </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_GAD2ktpp" sboTerm="SBO:0000185" id="R_GAD2ktpp" name="Gluconate 2 dehydrogenase  periplasm " reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB4N1000">
@@ -92856,9 +92867,8 @@
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062442294_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062442432_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062443092_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062442294_1"/>
           </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
@@ -102935,10 +102945,7 @@
           <speciesReference species="M_oaa__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062443722_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062444357_1"/>
-          </fbc:or>
+          <fbc:geneProductRef fbc:geneProduct="G_WP_062444357_1"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_MDH2" sboTerm="SBO:0000176" id="R_MDH2" name="Malate dehydrogenase (ubiquinone 8 as acceptor)" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107057,14 +107064,22 @@
           <speciesReference species="M_nad__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062425468_1"/>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
-            <fbc:and>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-            </fbc:and>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADH16pp" sboTerm="SBO:0000185" id="R_NADH16pp" name="NADH dehydrogenase (ubiquinone-8 &amp; 3 protons) (periplasm)" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107102,14 +107117,22 @@
           <speciesReference species="M_q8h2__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-            <fbc:and>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-            </fbc:and>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADH17pp" sboTerm="SBO:0000185" id="R_NADH17pp" name="NADH dehydrogenase (menaquinone-8 &amp; 3 protons) (periplasm)" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107145,10 +107168,22 @@
           <speciesReference species="M_nad__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADH18pp" sboTerm="SBO:0000185" id="R_NADH18pp" name="NADH dehydrogenase (demethylmenaquinone-8 &amp; 3 protons) (periplasm)" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107184,10 +107219,22 @@
           <speciesReference species="M_nad__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADH5" sboTerm="SBO:0000176" id="R_NADH5" name="NADH dehydrogenase (ubiquinone-8 )" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107236,13 +107283,22 @@
           <speciesReference species="M_q8h2__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062425468_1"/>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062440663_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062445538_1"/>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADH9" sboTerm="SBO:0000176" id="R_NADH9" name="NADH dehydrogenase (demethylmenaquinone-8 &amp; 0 protons)" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -107280,14 +107336,22 @@
           <speciesReference species="M_nad__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062425468_1"/>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425532_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062425533_1"/>
-            <fbc:and>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
-              <fbc:geneProductRef fbc:geneProduct="G_WP_156356423_1"/>
-            </fbc:and>
-          </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425536_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425538_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062425542_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437769_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437770_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437772_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437773_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437778_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437779_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062438924_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062441540_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_003502385_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_NADHHR" sboTerm="SBO:0000176" id="R_NADHHR" name="NADH hydratase" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -114895,7 +114959,11 @@
           <speciesReference species="M_nadh__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_WP_062424881_1"/>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062427379_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437398_1"/>
+            <fbc:geneProductRef fbc:geneProduct="G_WP_062437399_1"/>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_PDHcr" sboTerm="SBO:0000176" id="R_PDHcr" name="Pyruvate dehydrogenase (dihydrolipoamide dehydrogenase) reversible" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -116136,9 +116204,7 @@
         <fbc:geneProductAssociation>
           <fbc:or>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062427161_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062438431_1"/>
             <fbc:geneProductRef fbc:geneProduct="G_WP_062439164_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062441608_1"/>
           </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
@@ -122720,10 +122786,7 @@
           <speciesReference species="M_pyr__91__c__93__" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062425622_1"/>
-            <fbc:geneProductRef fbc:geneProduct="G_WP_062427905_1"/>
-          </fbc:or>
+          <fbc:geneProductRef fbc:geneProduct="G_WP_062427905_1"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="R_PYOVD2tex" sboTerm="SBO:0000185" id="R_PYOVD2tex" name="Pyoverdine export system" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N1000">
@@ -149420,6 +149483,23 @@
       <fbc:geneProduct metaid="G_WP_062438537_1" sboTerm="SBO:0000243" fbc:id="G_WP_062438537_1" fbc:name="G_WP_062438537_1" fbc:label="G_WP_062438537_1"/>
       <fbc:geneProduct metaid="G_WP_062438540_1" sboTerm="SBO:0000243" fbc:id="G_WP_062438540_1" fbc:name="G_WP_062438540_1" fbc:label="G_WP_062438540_1"/>
       <fbc:geneProduct metaid="G_WP_186330269_1" sboTerm="SBO:0000243" fbc:id="G_WP_186330269_1" fbc:name="G_WP_186330269_1" fbc:label="G_WP_186330269_1"/>
+      <fbc:geneProduct metaid="G_WP_156356514_1" sboTerm="SBO:0000243" fbc:id="G_WP_156356514_1" fbc:name="G_WP_156356514_1" fbc:label="G_WP_156356514_1"/>
+      <fbc:geneProduct metaid="G_WP_062424892_1" sboTerm="SBO:0000243" fbc:id="G_WP_062424892_1" fbc:name="G_WP_062424892_1" fbc:label="G_WP_062424892_1"/>
+      <fbc:geneProduct metaid="G_WP_062424891_1" sboTerm="SBO:0000243" fbc:id="G_WP_062424891_1" fbc:name="G_WP_062424891_1" fbc:label="G_WP_062424891_1"/>
+      <fbc:geneProduct metaid="G_WP_062424893_1" sboTerm="SBO:0000243" fbc:id="G_WP_062424893_1" fbc:name="G_WP_062424893_1" fbc:label="G_WP_062424893_1"/>
+      <fbc:geneProduct metaid="G_WP_062425532_1" sboTerm="SBO:0000243" fbc:id="G_WP_062425532_1" fbc:name="G_WP_062425532_1" fbc:label="G_WP_062425532_1"/>
+      <fbc:geneProduct metaid="G_WP_062425536_1" sboTerm="SBO:0000243" fbc:id="G_WP_062425536_1" fbc:name="G_WP_062425536_1" fbc:label="G_WP_062425536_1"/>
+      <fbc:geneProduct metaid="G_WP_062425538_1" sboTerm="SBO:0000243" fbc:id="G_WP_062425538_1" fbc:name="G_WP_062425538_1" fbc:label="G_WP_062425538_1"/>
+      <fbc:geneProduct metaid="G_WP_062425542_1" sboTerm="SBO:0000243" fbc:id="G_WP_062425542_1" fbc:name="G_WP_062425542_1" fbc:label="G_WP_062425542_1"/>
+      <fbc:geneProduct metaid="G_WP_062437769_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437769_1" fbc:name="G_WP_062437769_1" fbc:label="G_WP_062437769_1"/>
+      <fbc:geneProduct metaid="G_WP_062437772_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437772_1" fbc:name="G_WP_062437772_1" fbc:label="G_WP_062437772_1"/>
+      <fbc:geneProduct metaid="G_WP_062437773_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437773_1" fbc:name="G_WP_062437773_1" fbc:label="G_WP_062437773_1"/>
+      <fbc:geneProduct metaid="G_WP_062437778_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437778_1" fbc:name="G_WP_062437778_1" fbc:label="G_WP_062437778_1"/>
+      <fbc:geneProduct metaid="G_WP_062437779_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437779_1" fbc:name="G_WP_062437779_1" fbc:label="G_WP_062437779_1"/>
+      <fbc:geneProduct metaid="G_WP_003502385_1" sboTerm="SBO:0000243" fbc:id="G_WP_003502385_1" fbc:name="G_WP_003502385_1" fbc:label="G_WP_003502385_1"/>
+      <fbc:geneProduct metaid="G_WP_062427379_1" sboTerm="SBO:0000243" fbc:id="G_WP_062427379_1" fbc:name="G_WP_062427379_1" fbc:label="G_WP_062427379_1"/>
+      <fbc:geneProduct metaid="G_WP_062437398_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437398_1" fbc:name="G_WP_062437398_1" fbc:label="G_WP_062437398_1"/>
+      <fbc:geneProduct metaid="G_WP_062437399_1" sboTerm="SBO:0000243" fbc:id="G_WP_062437399_1" fbc:name="G_WP_062437399_1" fbc:label="G_WP_062437399_1"/>
     </fbc:listOfGeneProducts>
     <groups:listOfGroups>
       <groups:group sboTerm="SBO:0000633" groups:id="group1" groups:name="&lt;undefined&gt;" groups:kind="partonomy">
